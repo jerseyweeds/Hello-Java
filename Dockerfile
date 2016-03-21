@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 RUN mkdir /usr/src/app/ \
 	&& cd /usr/src/app/ \
-	&& wget --no-progress http://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz \
+	&& wget --nv http://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz \
 	&& tar -xzfv ./BitTorrent-Sync_arm.tar.gz
 
 
