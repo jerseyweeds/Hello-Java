@@ -14,4 +14,6 @@ RUN pwd
 
 RUN ls ./
 
+COPY run.sh /usr/src/app/run.sh
+
 CMD /usr/src/app/run.sh
