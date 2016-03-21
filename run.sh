@@ -1,4 +1,7 @@
 #!/bin/bash
 
 cd /usr/src/app
-java -cp . Hello
+tar -xfv btsync_arm.tar.gz
+mkdir .btsync 
+cd .btsync
+sudo ./btsync  
