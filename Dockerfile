@@ -4,8 +4,8 @@ RUN apt-get update && \
     apt-get install -y wget tar && \
     apt-get clean 
 
-RUN wget http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz \
-    && tar -xfv btsync_arm.tar.gz
+RUN wget https://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz \
+    && tar -xfv BitTorrent-Sync_arm.tar.gz
 
 COPY . /usr/src/app
 
