@@ -4,9 +4,11 @@ RUN apt-get update && \
     apt-get install -y wget tar && \
     apt-get clean 
 
-RUN mkdir /usr/src/app/ \
-	&& cd /usr/src/app/ \
-	&& wget  --no-verbose http://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz \
+CMD mkdir /usr/src/app/ 
+
+CMD cd /usr/src/app/ 
+
+RUN wget  --no-verbose http://download-cdn.getsyncapp.com/stable/linux-arm/BitTorrent-Sync_arm.tar.gz \
 	&& tar -xzfv ./BitTorrent-Sync_arm.tar.gz
 
 
